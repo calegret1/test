@@ -29,7 +29,7 @@ OE_PORT="8069"
 # IMPORTANT! This script contains extra libraries that are specifically needed for Odoo 14.0
 OE_VERSION="16.0"
 # Set this to True if you want to install the Odoo enterprise version!
-IS_ENTERPRISE="False"
+IS_ENTERPRISE="True"
 # Set this to True if you want to install Nginx!
 INSTALL_NGINX="True"
 # Set the superadmin password - if GENERATE_RANDOM_PASSWORD is set to "True" we will automatically generate a random password, otherwise we use this one
@@ -204,7 +204,7 @@ else
 fi
 
 # echo -e "\n======== Adding Enterprise or custom modules ============="
-if [ $IS_ENTERPRISE = "True15" ]; then
+if [ $IS_ENTERPRISE = "15" ]; then
   #### upgrade odoo community to enterprise edition ####
   # Odoo 15: https://www.soladrive.com/downloads/enterprise-15.0.tar.gz
   
