@@ -104,14 +104,14 @@ echo -e "\n================== Install python packages/requirements =============
 sudo pip3 install --upgrade pip
 sudo pip3 install setuptools wheel
 
-
-echo -e "\n=========== Installing nodeJS NPM and rtlcss for LTR support =================="
-sudo curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-sudo apt install -y nodejs npm -y
-sudo npm install -g --upgrade npm
-sudo ln -s /usr/bin/nodejs /usr/bin/node
-sudo npm install -g less less-plugin-clean-css
-sudo npm install -g rtlcss node-gyp
+#Cristian
+#echo -e "\n=========== Installing nodeJS NPM and rtlcss for LTR support =================="
+#sudo curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+#sudo apt install -y nodejs npm -y
+#sudo npm install -g --upgrade npm
+#sudo ln -s /usr/bin/nodejs /usr/bin/node
+#sudo npm install -g less less-plugin-clean-css
+#sudo npm install -g rtlcss node-gyp
 
 #--------------------------------------------------
 # Install Wkhtmltopdf if needed
