@@ -130,8 +130,12 @@ echo -e "\n---- Install wkhtmltopdf and place shortcuts on correct place for ODO
 ## https://github.com/odoo/odoo/wiki/Wkhtmltopdf ):
 ## https://www.odoo.com/documentation/16.0/setup/install.html#debian-ubuntu
 
-  sudo wget http://mirrors.kernel.org/ubuntu/pool/universe/w/wkhtmltopdf/wkhtmltopdf_0.12.6-2_amd64.deb
-  sudo dpkg -i wkhtmltopdf_0.12.6-2_amd64.deb
+wget http://mirrors.kernel.org/ubuntu/pool/universe/w/wkhtmltopdf/wkhtmltopdf_0.12.6-2_amd64.deb
+sudo apt-get install libqt5core5a
+sudo dpkg -i wkhtmltopdf_0.12.6-2_amd64.deb
+
+  #sudo wget http://mirrors.kernel.org/ubuntu/pool/universe/w/wkhtmltopdf/wkhtmltopdf_0.12.6-2_amd64.deb
+  #sudo dpkg -i wkhtmltopdf_0.12.6-2_amd64.deb
   sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin
   sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin
    else
