@@ -138,6 +138,10 @@ echo -e "\n---- Install wkhtmltopdf and place shortcuts on correct place for ODO
   sudo apt-get install libqt5core5a
   sudo dpkg -i wkhtmltox_0.12.5-1.bionic_amd64.deb
 
+  sudo apt-get install xfonts-75dpi
+  sudo apt-get update
+  #apt --fix-broken install
+
   sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin
   sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin
    else
